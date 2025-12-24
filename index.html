@@ -8,8 +8,74 @@
   </head>
   <body>
     <div id="app" class="container">
-      <navbar></navbar>
-      <footer></footer>
+      <!-- navbar -->
+      <nav class="navbar">
+        <div class="navbar__content">
+          <img class="navbar__logo navbar-logo" src="./src/assets/icons/logo.svg"></img>
+
+          <div class="navbar__menu navbar-menu">
+            <div class="navbar-menu__links navbar-menu-links">
+              <a class="navbar-menu-links__link" href="#">Destinations</a>
+              <a class="navbar-menu-links__link" href="#">Hotels</a>
+              <a class="navbar-menu-links__link" href="#">Flights</a>
+              <a class="navbar-menu-links__link" href="#">Bookings</a>
+            </div>
+
+            <div class="navbar-menu__language navbar-menu-language">
+              <button class="navbar-menu-language__login">Login</button>
+              <button class="navbar-menu-language__signup">Sign up</button>
+              <select class="navbar-menu-language__select" name="language" id="language-select">
+                <option value="en">EN</option>
+                <option value="es">ES</option>
+                <option value="fr">FR</option>
+                <option value="de">DE</option>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- main -->
+      <main></main>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="footer__logo-block footer-logo-block">
+            <h1 class="footer-logo-block__logo">Jadoo.</h1>
+            <p class="footer-logo-block__info">Book your trip in minute, get full
+Control for much longer.</p>
+          </div>
+          <div class="footer__info-block footer-info-block">
+            <h3 class="footer-info-block__title">Company</h3>
+            <p class="footer-info-block__text">About</p>
+            <p class="footer-info-block__text">Careers</p>
+            <p class="footer-info-block__text">Mobile</p>
+          </div>
+          <div class="footer__info-block footer-info-block">
+            <h3 class="footer-info-block__title">Contact</h3>
+            <p class="footer-info-block__text">Help/FAQ</p>
+            <p class="footer-info-block__text">Press</p>
+            <p class="footer-info-block__text">Affilates</p>
+          </div>
+          <div class="footer__info-block footer-info-block">
+            <h3 class="footer-info-block__title">More</h3>
+            <p class="footer-info-block__text">Airlinefees</p>
+            <p class="footer-info-block__text">Airline</p>
+            <p class="footer-info-block__text">Low fare tips</p>
+          </div>
+          <div class="footer__social footer-social">
+            <div class="footer__social-links footer-social-links">
+              <button>
+                <img/>
+              </button>
+               <button>
+                <img/>
+              </button>
+               <button>
+                <img/>
+              </button>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>

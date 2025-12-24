@@ -1,0 +1,10 @@
+// base styles
+@use './base/variables';
+@use './base/mixins';
+@use './base/fonts';
+
+// layout styles
+@use './layout/container';
+
+// component styles
+@use './components/navbar';
