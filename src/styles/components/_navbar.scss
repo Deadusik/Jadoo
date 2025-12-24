@@ -1,0 +1,88 @@
+.navbar {
+  width: 100%;
+  font-family: "GoogleSans", sans-serif;
+  font-size: 17px;
+  position: relative;
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 114px;
+    height: 34px;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap:86px;
+  }
+}
+
+.navbar-menu {
+  &__links {
+    display: flex;
+    gap:55px
+  } 
+
+  &__language {}
+}
+
+.navbar-menu-language {
+
+  &__login {
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__signup {
+    width: 102px;
+    height: 40px;
+    margin-left: 52px;
+    font-weight: 500;
+    border: 1px solid #212832;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__select {
+    margin-left: 42px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.navbar-menu-links {
+  &__link {
+    font-weight: 500;
+    color: #212832;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
