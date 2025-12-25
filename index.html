@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,7 +11,10 @@
       <!-- navbar -->
       <nav class="navbar">
         <div class="navbar__content">
-          <img class="navbar__logo navbar-logo" src="./src/assets/icons/logo.svg"/>
+          <img
+            class="navbar__logo navbar-logo"
+            src="./src/assets/icons/logo.svg"
+          />
 
           <div class="navbar__menu navbar-menu">
             <div class="navbar-menu__links navbar-menu-links">
@@ -24,7 +27,11 @@
             <div class="navbar-menu__language navbar-menu-language">
               <button class="navbar-menu-language__login">Login</button>
               <button class="navbar-menu-language__signup">Sign up</button>
-              <select class="navbar-menu-language__select" name="language" id="language-select">
+              <select
+                class="navbar-menu-language__select"
+                name="language"
+                id="language-select"
+              >
                 <option value="en">EN</option>
                 <option value="es">ES</option>
                 <option value="fr">FR</option>
@@ -39,12 +46,14 @@
       <!-- footer -->
       <footer class="footer">
         <div class="footer__content">
-          <!-- logo -->
-          <div class="footer__logo-block footer-logo-block">
-            <h1 class="footer-logo-block__logo">Jadoo.</h1>
-            <p class="footer-logo-block__info">Book your trip in minute, get full
-Control for much longer.</p>
-          </div>
+          <div class="footer__main-content">
+            <!-- logo -->
+            <div class="footer__logo-block footer-logo-block">
+              <h1 class="footer-logo-block__logo">Jadoo.</h1>
+              <p class="footer-logo-block__info">
+                Book your trip in minute, get full Control for much longer.
+              </p>
+            </div>
             <!-- info -->
             <div class="footer__info footer-info">
               <!-- company seciton -->
@@ -75,35 +84,51 @@ Control for much longer.</p>
                 </div>
               </div>
             </div>
-          <!-- social -->
-          <div class="footer__social footer-social">
-            <div class="footer__social-links footer-social-links">
-              <!-- facebook button -->
-              <button class="footer-social-links__button">
-                <img class="footer-social-links__icon" src="./src/assets/icons/social/facebook.svg"/>
-              </button>
-              <!-- instagram button -->
-               <button class="footer-social-links__button">
-                <img class="footer-social-links__icon" src="./src/assets/icons/social/instagram.svg"/>
-              </button>
-              <!-- twitter button -->
-               <button class="footer-social-links__button">
-                <img class="footer-social-links__icon" src="./src/assets/icons/social/twitter.svg"/>
-              </button>
-            </div>
-            <div class="footer__social-store footer-social-store">
-              <div class="footer-social-store__content">
-                <h3 class="footer-social-store__title">Discover our app</h3>
-                <div class="footer-social-store__buttons">
-                  <button class="footer-social-store__button">
-                    <img src="./src/assets/icons/social/google_play.svg"/>
-                  </button>
-                  <button class="footer-social-store__button">
-                    <img src="./src/assets/icons/social/apple_store.svg"/>
-                  </button>
+            <!-- social -->
+            <div class="footer__social footer-social">
+              <div class="footer__social-links footer-social-links">
+                <!-- facebook button -->
+                <a href="/" class="footer-social-links__button">
+                  <img
+                    class="footer-social-links__icon"
+                    src="./src/assets/icons/social/facebook.svg"
+                  />
+                </a>
+                <!-- instagram button -->
+                <a href="/" class="footer-social-links__button">
+                  <img
+                    class="footer-social-links__icon"
+                    src="./src/assets/icons/social/instagram.svg"
+                  />
+                </a>
+                <!-- twitter button -->
+                <a href="/" class="footer-social-links__button">
+                  <img
+                    class="footer-social-links__icon"
+                    src="./src/assets/icons/social/twitter.svg"
+                  />
+                </a>
+              </div>
+              <!-- store section -->
+              <div class="footer__social-store footer-social-store">
+                <div class="footer-social-store__content">
+                  <h3 class="footer-social-store__title">Discover our app</h3>
+                  <div class="footer-social-store__buttons">
+                    <!-- google play button -->
+                    <a href="/" class="footer-social-store__button">
+                      <img src="./src/assets/icons/social/google_play.svg" />
+                    </a>
+                    <!-- apple store button -->
+                    <a href="/" class="footer-social-store__button">
+                      <img src="./src/assets/icons/social/apple_store.svg" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="footer__copyright footer-copyright">
+            <h4 class="footer-copyright__text">All rights reserved@jadoo.co</h4>
           </div>
         </div>
       </footer>

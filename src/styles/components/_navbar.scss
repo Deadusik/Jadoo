@@ -1,8 +1,11 @@
+@use "../base/mixins" as m;
+
 .navbar {
   width: 100%;
   font-family: "GoogleSans", sans-serif;
   font-size: 17px;
   position: relative;
+  color: #212832;
 
   &__content {
     width: 100%;
@@ -18,26 +21,26 @@
   &__menu {
     display: flex;
     align-items: center;
-    gap:86px;
+    gap: 86px;
   }
 }
 
 .navbar-menu {
   &__links {
     display: flex;
-    gap:55px
-  } 
+    gap: 55px;
+  }
 
-  &__language {}
+  &__language {
+  }
 }
 
 .navbar-menu-language {
-
   &__login {
     font-weight: 500;
     background-color: transparent;
     border: none;
-    cursor: pointer;
+    @include m.scale-hover(1.05, 0.15s, ease);
 
     &:hover {
       text-decoration: underline;
@@ -52,12 +55,8 @@
     border: 1px solid #212832;
     border-radius: 5px;
     background-color: transparent;
-    cursor: pointer;
-    transition: transform 0.2s ease;
 
-    &:hover {
-      transform: scale(1.05);
-    }
+    @include m.scale-hover(1.05, 0.15s, ease);
   }
 
   &__select {
@@ -65,7 +64,7 @@
     font-weight: 500;
     border: none;
     cursor: pointer;
-    
+
     &:focus {
       outline: none;
     }
@@ -77,10 +76,10 @@
     font-weight: 500;
     color: #212832;
     text-decoration: none;
+    @include m.scale-hover(1.05, 0.15s, ease);
 
     &:hover {
       text-decoration: underline;
     }
   }
 }
-

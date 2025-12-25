@@ -1,87 +1,92 @@
-@use '../base/colors';
-@use '../base/mixins' as m;
+@use "../base/colors";
+@use "../base/mixins" as m;
 
 .footer {
-    font-family: "Poppins";
-    
-    &__content {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
+  font-family: "Poppins";
 
-    &__logo-block {
-    }
+  &__content {
+  }
 
-    &__social {
-    }
+  &__logo-block {
+  }
 
-    &__info {
-        display: flex;
-    }
+  &__social {
+  }
+
+  &__main-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    display: flex;
+  }
+
+  &__copyright {
+  }
 }
 
 .footer-logo-block {
-    max-width: 207px;
-    width: 100%;
+  max-width: 207px;
+  width: 100%;
 
-    &__logo {    
-        font-weight: 500;
-        font-size: 44px;
-        color: #181E4B;
-        margin: 0;
-    }
+  &__logo {
+    font-weight: 500;
+    font-size: 44px;
+    color: #181e4b;
+    margin: 0;
+  }
 
-    &__info {
-        margin-top: 27px;
-        color: colors.$dark-sky;
-        font-size: 13px;
-        font-weight: 500;
-    }
+  &__info {
+    margin-top: 27px;
+    color: colors.$dark-sky;
+    font-size: 13px;
+    font-weight: 500;
+  }
 }
 
 .footer-info {
-    max-width: 474px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  max-width: 474px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 
-    &__section {
-    }
+  &__section {
+  }
 }
 
 .footer-info-section {
-    height: 100%;
-    max-height: 153px;
+  height: 100%;
+  max-height: 153px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__title {
+    font-size: 21px;
+  }
+
+  &__info-block {
+    height: 91px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
 
-    &__title {
-        font-size: 21px;
+  &__text {
+    font-size: 18px;
+    color: colors.$dark-sky;
+    font-weight: 500;
+    @include m.scale-hover(1.05, 0.15s, ease);
+    &:hover {
+      text-decoration: underline;
     }
-
-    &__info-block {
-        height: 91px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    &__text {
-        font-size: 18px;
-        color: colors.$dark-sky;
-        font-weight: 500;
-        @include m.scale-hover(1.05, 0.15s, ease);
-        &:hover {
-            text-decoration: underline;
-        }
-    }
+  }
 }
 
 .footer-social {
   &__links {
-    
   }
 
   &__store {
@@ -89,43 +94,58 @@
 }
 
 .footer-social-links {
-    max-width: 177px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  max-width: 177px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 
-    &__button {
-        @include m.scale-hover(1.10, 0.15s, ease);
-    }
+  &__button {
+    @include m.scale-hover(1.1, 0.15s, ease);
+  }
 
-    &__icon {
-    }
+  &__icon {
+  }
 }
 
 .footer-social-store {
-    max-width: 214px;
-    width: 100%;
-    margin-top: 9px;
+  max-width: 214px;
+  width: 100%;
+  margin-top: 9px;
+  display: flex;
+  justify-content: space-between;
+
+  &__content {
+  }
+
+  &__title {
+    font-weight: 500;
+    color: colors.$dark-sky;
+    font-size: 20px;
+  }
+
+  &__buttons {
+    margin-top: 16px;
     display: flex;
-    justify-content: space-between;
+    gap: 12px;
+  }
 
-    &__content {
-    }
+  &__button {
+    display: inline-block;
+    @include m.scale-hover(1.1, 0.15s, ease);
+  }
+}
 
-    &__title {
-        font-weight: 500;
-        color: colors.$dark-sky;
-        font-size: 20px;
-    }
+.footer-copyright {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 79px;
+  padding-top: 84px;
 
-    &__buttons {
-        margin-top: 16px;
-        display: flex;
-        gap: 12px;
-    }
-
-    &__button {
-        display: inline-block;
-        @include m.scale-hover(1.10, 0.15s, ease);
-    }
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+    color: colors.$dark-sky;
+  }
 }
