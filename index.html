@@ -11,7 +11,7 @@
       <!-- navbar -->
       <nav class="navbar">
         <div class="navbar__content">
-          <img class="navbar__logo navbar-logo" src="./src/assets/icons/logo.svg"></img>
+          <img class="navbar__logo navbar-logo" src="./src/assets/icons/logo.svg"/>
 
           <div class="navbar__menu navbar-menu">
             <div class="navbar-menu__links navbar-menu-links">
@@ -29,6 +29,7 @@
                 <option value="es">ES</option>
                 <option value="fr">FR</option>
                 <option value="de">DE</option>
+              </select>
             </div>
           </div>
         </div>
@@ -38,45 +39,75 @@
       <!-- footer -->
       <footer class="footer">
         <div class="footer__content">
+          <!-- logo -->
           <div class="footer__logo-block footer-logo-block">
             <h1 class="footer-logo-block__logo">Jadoo.</h1>
             <p class="footer-logo-block__info">Book your trip in minute, get full
 Control for much longer.</p>
           </div>
-          <div class="footer__info-block footer-info-block">
-            <h3 class="footer-info-block__title">Company</h3>
-            <p class="footer-info-block__text">About</p>
-            <p class="footer-info-block__text">Careers</p>
-            <p class="footer-info-block__text">Mobile</p>
-          </div>
-          <div class="footer__info-block footer-info-block">
-            <h3 class="footer-info-block__title">Contact</h3>
-            <p class="footer-info-block__text">Help/FAQ</p>
-            <p class="footer-info-block__text">Press</p>
-            <p class="footer-info-block__text">Affilates</p>
-          </div>
-          <div class="footer__info-block footer-info-block">
-            <h3 class="footer-info-block__title">More</h3>
-            <p class="footer-info-block__text">Airlinefees</p>
-            <p class="footer-info-block__text">Airline</p>
-            <p class="footer-info-block__text">Low fare tips</p>
-          </div>
+            <!-- info -->
+            <div class="footer__info footer-info">
+              <!-- company seciton -->
+              <div class="footer-info__section footer-info-section">
+                <h3 class="footer-info-section__title">Company</h3>
+                <div class="footer-info-section__info-block">
+                  <p class="footer-info-section__text">About</p>
+                  <p class="footer-info-section__text">Careers</p>
+                  <p class="footer-info-section__text">Mobile</p>
+                </div>
+              </div>
+              <!-- contact section -->
+              <div class="footer-info__section footer-info-section">
+                <h3 class="footer-info-section__title">Contact</h3>
+                <div class="footer-info-section__info-block">
+                  <p class="footer-info-section__text">Help/FAQ</p>
+                  <p class="footer-info-section__text">Press</p>
+                  <p class="footer-info-section__text">Affilates</p>
+                </div>
+              </div>
+              <!-- more section -->
+              <div class="footer-info__section footer-info-section">
+                <h3 class="footer-info-section__title">More</h3>
+                <div class="footer-info-section__info-block">
+                  <p class="footer-info-section__text">Airlinefees</p>
+                  <p class="footer-info-section__text">Airline</p>
+                  <p class="footer-info-section__text">Low fare tips</p>
+                </div>
+              </div>
+            </div>
+          <!-- social -->
           <div class="footer__social footer-social">
             <div class="footer__social-links footer-social-links">
-              <button>
-                <img/>
+              <!-- facebook button -->
+              <button class="footer-social-links__button">
+                <img class="footer-social-links__icon" src="./src/assets/icons/social/facebook.svg"/>
               </button>
-               <button>
-                <img/>
+              <!-- instagram button -->
+               <button class="footer-social-links__button">
+                <img class="footer-social-links__icon" src="./src/assets/icons/social/instagram.svg"/>
               </button>
-               <button>
-                <img/>
+              <!-- twitter button -->
+               <button class="footer-social-links__button">
+                <img class="footer-social-links__icon" src="./src/assets/icons/social/twitter.svg"/>
               </button>
+            </div>
+            <div class="footer__social-store footer-social-store">
+              <div class="footer-social-store__content">
+                <h3 class="footer-social-store__title">Discover our app</h3>
+                <div class="footer-social-store__buttons">
+                  <button class="footer-social-store__button">
+                    <img src="./src/assets/icons/social/google_play.svg"/>
+                  </button>
+                  <button class="footer-social-store__button">
+                    <img src="./src/assets/icons/social/apple_store.svg"/>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </footer>
     </div>
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
