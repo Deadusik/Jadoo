@@ -1,0 +1,83 @@
+@use "../base/colors.scss";
+
+.header {
+  font-family: "Poppins", sans-serif;
+
+  &__info {
+  }
+
+  &__decoration {
+  }
+}
+
+.header-info {
+  &__title-block {
+  }
+
+  &__sub-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: colors.$red;
+  }
+
+  &__title {
+    width: 100%;
+    font-size: 84px;
+    font-family: "Volkhov", sans-serif;
+    letter-spacing: -2px;
+    color: colors.$dark-blue;
+    position: relative;
+
+    &::before {
+      content: "";
+      left: 250px;
+      top: 68px;
+      position: absolute;
+      background-image: url("../../assets/images/underline.svg");
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      z-index: -100;
+    }
+  }
+
+  &__info {
+    max-width: 477px;
+    font-weight: 500;
+    color: colors.$dark-sky;
+    line-height: 30px;
+  }
+
+  &__button-block {
+  }
+
+  &__find-button {
+  }
+
+  &__play-button-block {
+  }
+}
+
+.play-button-block {
+  &__play-button {
+  }
+
+  &__info {
+  }
+}
+
+.header-decoration {
+  &__traveller {
+    top: 120px;
+    right: 0;
+    position: absolute;
+    z-index: -90;
+  }
+
+  &__traveller-bg {
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: -100;
+  }
+}

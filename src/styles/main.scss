@@ -1,13 +1,15 @@
 // base styles
-@use './base/reset';
-@use './base/variables';
-@use './base/mixins';
-@use './base/fonts';
-@use './base/colors';
+@use "./base/reset";
+@use "./base/variables";
+@use "./base/mixins";
+@use "./base/fonts";
+@use "./base/colors";
 
 // layout styles
-@use './layout/container';
+@use "./layout/container";
+@use "./layout/main";
 
 // component styles
-@use './components/navbar';
-@use './components/footer';
+@use "./components/navbar";
+@use "./components/footer";
+@use "./components/header";
