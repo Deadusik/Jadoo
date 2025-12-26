@@ -1,8 +1,11 @@
 @use "../base/colors.scss";
 @use "../base/mixins.scss" as m;
+@use "../base/variables.scss" as v;
 
 .header {
   font-family: "Poppins", sans-serif;
+  padding: 0 v.$content-padding-x;
+  position: relative;
 
   &__info {
   }
@@ -115,16 +118,20 @@
 
 .header-decoration {
   &__traveller {
-    top: 120px;
-    right: 0;
+    width: 765px;
+    top: -155px;
+    right: 105px;
     position: absolute;
     z-index: -90;
+    object-fit: cover;
   }
 
   &__traveller-bg {
-    top: 0;
+    width: 704px;
+    top: -265px;
     right: 0;
     position: absolute;
     z-index: -100;
+    object-fit: cover;
   }
 }

@@ -1,6 +1,9 @@
 @use "../base/colors";
+@use "../base/variables" as v;
 
 .services {
+  padding: 0 v.$content-padding-x;
+
   &__content {
   }
 
@@ -14,10 +17,10 @@
     &::after {
       content: "";
       position: absolute;
-      width: 100%;
-      height: 200%;
+      width: 153px;
+      height: 166px;
       top: 0;
-      right: -100px;
+      right: -80px;
       background-image: url("./../../assets/images/pros.svg");
       background-repeat: no-repeat;
       background-position: top right;

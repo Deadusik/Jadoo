@@ -1,4 +1,5 @@
 @use "../base/mixins" as m;
+@use "../base/variables" as v;
 
 .navbar {
   width: 100%;
@@ -6,6 +7,7 @@
   font-size: 17px;
   position: relative;
   color: #212832;
+  padding: v.$content-padding-top v.$content-padding-x;
 
   &__content {
     width: 100%;

@@ -1,7 +1,8 @@
+@use "../base/variables" as v;
+
 .container {
-  max-width: 1440px;
-  min-width: 1440px;
-  padding: 47px 140px;
+  max-width: v.$container-max-width;
+  min-width: v.$container-max-width;
 
   &__navbar {
     margin-bottom: 130px;
