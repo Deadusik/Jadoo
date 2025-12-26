@@ -1,0 +1,43 @@
+@use "../base/colors";
+
+.services {
+  &__content {
+  }
+
+  &__title-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__cards-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.services-title-block {
+  &__sub-title {
+    font-size: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: colors.$dark-sky;
+  }
+
+  &__title {
+    font-family: "Volkhov";
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 24px;
+    color: colors.$dark-blue;
+  }
+}
+
+.services-cards-block {
+  margin-top: 83px;
+
+  &__card {
+  }
+}
