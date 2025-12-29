@@ -1,0 +1,22 @@
+@use "../base/colors.scss";
+
+.title-sub-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    margin-top: 24px;
+    font-family: "Volkhov";
+    font-size: 50px;
+    font-weight: 700;
+    color: colors.$dark-blue;
+  }
+
+  &__sub-title {
+    font-size: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: colors.$dark-sky;
+  }
+}
