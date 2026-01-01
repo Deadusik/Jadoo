@@ -1,5 +1,22 @@
+$progress-color: #8a79df;
+
 .status-card-dialog {
+  width: 263px;
+  height: 129px;
+  position: absolute;
+
+  font-family: "Poppins";
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 65px 47px 0 rgba(0, 0, 0, 0.015),
+    0 39px 25px 0 rgba(0, 0, 0, 0.012), 0 20px 13px 0 rgba(0, 0, 0, 0.01);
+
   &__content {
+    display: flex;
+    gap: 11px;
+    padding-top: 16px;
+    align-items: start;
+    justify-content: center;
   }
 
   &__icon {
@@ -9,14 +26,44 @@
   }
 
   &__status {
+    color: #84829a;
+    font-size: 14px;
+    font-weight: 500;
   }
 
   &__title {
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 18px;
   }
 
   &__progress {
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 500;
+
+    span {
+      color: $progress-color;
+    }
   }
 
   &__progress-bar {
+    width: 156px;
+    height: 5px;
+    margin-top: 10px;
+    position: relative;
+
+    background-color: #f5f5f5;
+    border-radius: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $progress-color;
+      width: 73px;
+      height: 5px;
+      border-radius: 30px;
+      left: 0;
+    }
   }
 }

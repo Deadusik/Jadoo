@@ -1,4 +1,21 @@
+@use "../base/colors";
+@use "../base/mixins" as m;
+
 .status-card {
+  width: 370px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+
+  font-family: "Poppins";
+  position: relative;
+  background-color: white;
+  box-shadow: 0 65px 47px 0 rgba(0, 0, 0, 0.015),
+    0 39px 25px 0 rgba(0, 0, 0, 0.012), 0 20px 13px 0 rgba(0, 0, 0, 0.01);
+
   &__content {
   }
 
@@ -6,9 +23,17 @@
   }
 
   &__title {
+    margin-top: 26px;
+    font-size: 16px;
+    letter-spacing: 1.5%;
+    font-weight: 500;
   }
 
   &__date-block {
+    margin-top: 14px;
+    display: flex;
+    color: colors.$dark-sky;
+    font-weight: 500;
   }
 
   &__date {
@@ -18,23 +43,64 @@
   }
 
   &__icons-block {
+    margin-top: 22px;
+    display: flex;
+    gap: 18px;
+  }
+
+  &__button {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+
+    @include m.scale-hover();
   }
 
   &__icon {
+    width: 12px;
   }
 
   &__favorite-block {
+    margin-top: 29px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__people-block {
+    display: flex;
+    gap: 5px;
   }
 
   &__people-info {
+    margin-top: 6px;
+    color: colors.$dark-sky;
+    font-weight: 500;
   }
 
   &__favorite-button {
+    @include m.scale-hover();
   }
 
   &__dialog {
+    right: -100px;
+    bottom: 52px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -8px;
+    top: -10px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #59b1e6;
+    filter: blur(100px);
+    z-index: -100;
   }
 }

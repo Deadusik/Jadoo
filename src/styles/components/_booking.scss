@@ -5,6 +5,7 @@
 
   &__content {
     display: flex;
+    gap: 118px;
   }
 
   &__info-block {
@@ -30,5 +31,6 @@
   }
 
   &__status-card {
+    margin-top: 56px;
   }
 }
