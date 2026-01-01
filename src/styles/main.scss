@@ -15,7 +15,11 @@
 @use "./components/header";
 @use "./components/services";
 @use "./components/destinations";
+@use "./components/booking";
 
 @use "./components/destination-card";
 @use "./components/service-card";
 @use "./components/title-sub-title";
+@use "./components/status-card-dialog";
+@use "./components/status-card";
+@use "./components/step";

@@ -5,6 +5,10 @@
   flex-direction: column;
   align-items: center;
 
+  &--start {
+    align-items: flex-start;
+  }
+
   &__title {
     margin-top: 24px;
     font-family: "Volkhov";

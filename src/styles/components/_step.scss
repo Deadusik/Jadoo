@@ -1,0 +1,42 @@
+@use "../base/colors";
+
+.step {
+  display: flex;
+  gap: 21px;
+  font-family: "Poppins";
+  font-size: 16px;
+  color: colors.$dark-sky;
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    padding: 12px;
+  }
+
+  &__icon--rectangle {
+    background-color: #f0bb1f;
+  }
+
+  &__icon--swimming {
+    background-color: #f15a2b;
+  }
+
+  &__icon--car {
+    background-color: #006380;
+  }
+
+  &__info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__title {
+    font-weight: 700;
+  }
+
+  &__info {
+    max-width: 327px;
+  }
+}
