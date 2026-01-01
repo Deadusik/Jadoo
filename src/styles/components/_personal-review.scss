@@ -1,0 +1,25 @@
+.personal-review {
+  width: 504px;
+  height: 245px;
+  background: white;
+
+  &__content {
+  }
+
+  &__text {
+    max-width: 384px;
+    white-space: pre-wrap;
+  }
+
+  &__name-block {
+  }
+
+  &__name {
+  }
+
+  &__location {
+  }
+
+  &--inactive {
+  }
+}

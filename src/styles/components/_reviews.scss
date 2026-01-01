@@ -1,0 +1,63 @@
+@use "../base/variables.scss" as v;
+
+.reviews {
+  padding: 0 v.$content-padding-x;
+
+  &__content {
+    display: flex;
+  }
+
+  &__dots-block {
+  }
+
+  &__title-block {
+    display: flex;
+  }
+
+  &__dots-indicator {
+  }
+
+  &__reviews-block {
+    margin-left: 124px;
+  }
+
+  &__personal-review {
+  }
+
+  &__control {
+  }
+}
+
+.title-sub-title {
+  &__sub-title {
+  }
+
+  &__title {
+  }
+
+  &--start {
+  }
+}
+
+.reviews-dots-indicator {
+  margin-top: 98px;
+  display: inline-flex;
+  gap: 26px;
+
+  &__dot {
+    width: 12px;
+    height: 12px;
+    background-color: #39425d;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__dot--inactive {
+    background-color: #e5e5e5;
+  }
+}
+
+.reviews-control {
+  &__arrow {
+  }
+}

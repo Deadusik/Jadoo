@@ -9,17 +9,20 @@
 @use "./layout/container";
 @use "./layout/main";
 
-// component styles
+// sections styles
 @use "./components/navbar";
 @use "./components/footer";
 @use "./components/header";
 @use "./components/services";
 @use "./components/destinations";
 @use "./components/booking";
+@use "./components/reviews.scss";
 
+// components styles
 @use "./components/destination-card";
 @use "./components/service-card";
 @use "./components/title-sub-title";
 @use "./components/status-card-dialog";
 @use "./components/status-card";
 @use "./components/step";
+@use "./components/personal-review.scss";
