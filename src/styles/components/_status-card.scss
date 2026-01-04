@@ -13,8 +13,8 @@
   font-family: "Poppins";
   position: relative;
   background-color: white;
-  box-shadow: 0 65px 47px 0 rgba(0, 0, 0, 0.015),
-    0 39px 25px 0 rgba(0, 0, 0, 0.012), 0 20px 13px 0 rgba(0, 0, 0, 0.01);
+
+  @include m.card-shadow();
 
   &__content {
   }

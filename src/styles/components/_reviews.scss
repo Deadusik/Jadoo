@@ -24,6 +24,12 @@
   &__personal-review {
   }
 
+  &__personal-review-inactive {
+    position: absolute;
+    bottom: 150px;
+    left: 50px;
+  }
+
   &__control {
   }
 }
@@ -58,6 +64,21 @@
 }
 
 .reviews-control {
+  height: 71px;
+  margin-left: 100px;
+  margin-top: 107px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   &__arrow {
+    cursor: pointer;
+
+    &--up {
+    }
+
+    &--down {
+      transform: rotate(180deg);
+    }
   }
 }
