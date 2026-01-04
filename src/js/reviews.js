@@ -88,17 +88,22 @@ function switchCardByArrows() {
     arrowUp.addEventListener("click", () => {
       reviewIndex = reviewIndex === 0 ? reviewIndex : reviewIndex - 1;
 
-      switchArrows();
+      switchControls();
       changeReview();
     });
 
     arrowDown.addEventListener("click", () => {
       reviewIndex = reviewIndex === MAX_INDEX ? reviewIndex : reviewIndex + 1;
 
-      switchArrows();
+      switchControls();
       changeReview();
     });
   }
+}
+
+function switchControls() {
+  switchDots();
+  switchArrows();
 }
 
 function switchArrows() {
@@ -126,7 +131,7 @@ function switchCardByDots() {
     dot.addEventListener("click", () => {
       reviewIndex = index;
 
-      switchDots();
+      switchControls();
 
       setReviewData(currentReviewElement, reviewsData[reviewIndex]);
       setReviewData(inactiveReviewElement, reviewsData[getPrevReviewIndex()]);

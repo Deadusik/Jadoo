@@ -64,14 +64,15 @@
 }
 
 .reviews-control {
-  height: 71px;
-  margin-left: 100px;
+  height: 91px;
+  margin-left: 90px;
   margin-top: 107px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   &__arrow {
+    padding: 10px;
     cursor: pointer;
 
     &--up {
