@@ -16,7 +16,8 @@
 @use "./components/services";
 @use "./components/destinations";
 @use "./components/booking";
-@use "./components/reviews.scss";
+@use "./components/reviews";
+@use "./components/sponsors";
 
 // components styles
 @use "./components/destination-card";
@@ -25,4 +26,4 @@
 @use "./components/status-card-dialog";
 @use "./components/status-card";
 @use "./components/step";
-@use "./components/personal-review.scss";
+@use "./components/personal-review";

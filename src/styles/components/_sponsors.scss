@@ -1,0 +1,36 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.sponsors {
+  padding: 0 v.$content-padding-x;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__sponsor {
+  }
+}
+
+.sponsor {
+  &--expedia {
+    width: 241px;
+    height: 86px;
+    position: relative;
+    border-radius: 10px;
+
+    @include m.card-shadow();
+  }
+
+  &--expedia &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__icon {
+  }
+}
