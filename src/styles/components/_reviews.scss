@@ -19,14 +19,15 @@
 
   &__reviews-block {
     margin-left: 124px;
+    position: relative;
   }
 
   &__personal-review {
   }
 
   &__personal-review-inactive {
-    position: absolute;
-    bottom: 150px;
+    position: absolute !important;
+    bottom: -30px;
     left: 50px;
   }
 
