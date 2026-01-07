@@ -12,19 +12,19 @@ const reviewsData = [
     text: "“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”",
     name: "Mike taylor",
     location: "Lahore, Pakistan",
-    avatarSrc: "./assets/icons/avatar.svg",
+    avatarSrc: "../src/assets/icons/avatar.svg",
   },
   {
-    text: "“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”",
+    text: "“Across the quiet hills it wandered. Often knew before the rest. Of imagined no one.”",
     name: "Chris Thomas",
     location: "CEO of Red Button",
-    avatarSrc: "./assets/icons/avatar.svg",
+    avatarSrc: "../src/assets/icons/avatar3.svg",
   },
   {
-    text: "“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”",
+    text: "“Beneath soft skies she lingered. Surely felt as others did. Of hidden or wished none.”",
     name: "Sophia Lee",
     location: "New York, USA",
-    avatarSrc: "./assets/icons/avatar.svg",
+    avatarSrc: "../src/assets/icons/avatar2.svg",
   },
 ];
 
@@ -50,20 +50,30 @@ const dotElements = document.getElementsByClassName(
   "reviews-dots-indicator__dot"
 );
 
-function setReviewData(reviewElement, reviewData) {
+function setReviewData(reviewElement, reviewData, animated = false) {
+  if (animated) reviewElement.classList.add("personal-review--swiping");
+
   if (reviewElement && reviewData) {
-    reviewElement.querySelector(".personal-review__text").textContent =
-      reviewData.text;
-    reviewElement.querySelector(".personal-review__name").textContent =
-      reviewData.name;
-    reviewElement.querySelector(".personal-review__location").textContent =
-      reviewData.location;
+    setTimeout(() => {
+      reviewElement.querySelector(".personal-review__text").textContent =
+        reviewData.text;
+      reviewElement.querySelector(".personal-review__name").textContent =
+        reviewData.name;
+      reviewElement.querySelector(".personal-review__location").textContent =
+        reviewData.location;
+      reviewElement.style.setProperty(
+        "--avatar",
+        `url("${reviewData.avatarSrc}")`
+      );
+
+      reviewElement.classList.remove("personal-review--swiping");
+    }, 300);
   }
 }
 
 function changeReview() {
   setReviewData(currentReviewElement, reviewsData[reviewIndex]);
-  setReviewData(inactiveReviewElement, reviewsData[getPrevReviewIndex()]);
+  setReviewData(inactiveReviewElement, reviewsData[getPrevReviewIndex()], true);
 }
 
 function getPrevReviewIndex() {
@@ -86,17 +96,23 @@ function switchCardByArrows() {
 
   if (arrowUp && arrowDown) {
     arrowUp.addEventListener("click", () => {
-      reviewIndex = reviewIndex === 0 ? reviewIndex : reviewIndex - 1;
+      const isBorder = reviewIndex === 0;
+      reviewIndex = isBorder ? reviewIndex : reviewIndex - 1;
 
-      switchControls();
-      changeReview();
+      if (!isBorder) {
+        switchControls();
+        changeReview();
+      }
     });
 
     arrowDown.addEventListener("click", () => {
-      reviewIndex = reviewIndex === MAX_INDEX ? reviewIndex : reviewIndex + 1;
+      const isBorder = reviewIndex === MAX_INDEX;
+      reviewIndex = isBorder ? reviewIndex : reviewIndex + 1;
 
-      switchControls();
-      changeReview();
+      if (!isBorder) {
+        switchControls();
+        changeReview();
+      }
     });
   }
 }
@@ -132,9 +148,7 @@ function switchCardByDots() {
       reviewIndex = index;
 
       switchControls();
-
-      setReviewData(currentReviewElement, reviewsData[reviewIndex]);
-      setReviewData(inactiveReviewElement, reviewsData[getPrevReviewIndex()]);
+      changeReview();
     });
   });
 }

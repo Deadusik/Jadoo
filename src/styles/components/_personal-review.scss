@@ -3,7 +3,7 @@
 
 .personal-review {
   width: 504px;
-  min-height: 245px;
+  height: 245px;
   position: relative;
 
   border-radius: 10px;
@@ -11,11 +11,20 @@
   color: colors.$dark-sky;
   background: white;
   @include m.card-shadow();
+  transition: transform 0.3s ease;
 
   &--inactive {
     box-shadow: none;
     outline: 2px solid #efefef;
     z-index: -100;
+  }
+
+  &--inactive::before {
+    display: none;
+  }
+
+  &--swiping {
+    transform: translate(-50px, -85px);
   }
 
   &::before {
@@ -25,16 +34,20 @@
     height: 68px;
     left: -31px;
     top: -34px;
-    background-image: url("../../assets/icons/avatar.svg");
+    background-image: var(--avatar, url("../../assets/icons/avatar.svg"));
     background-position: top left;
+    background-size: cover;
   }
 
   &__content {
+    height: 100%;
     padding-top: 28px;
     padding-left: 34px;
+    padding-bottom: 36px;
     display: flex;
     flex-direction: column;
     align-items: start;
+    justify-content: space-between;
   }
 
   &__text {
