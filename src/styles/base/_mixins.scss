@@ -1,0 +1,13 @@
+@mixin scale-hover($scale: 1.1, $duration: 0.2s, $timing: ease) {
+  cursor: pointer;
+  transition: transform $duration $timing;
+
+  &:hover {
+    transform: scale($scale);
+  }
+}
+
+@mixin card-shadow() {
+  box-shadow: 0 65px 47px 0 rgba(0, 0, 0, 0.015),
+    0 39px 25px 0 rgba(0, 0, 0, 0.012), 0 20px 13px 0 rgba(0, 0, 0, 0.01);
+}

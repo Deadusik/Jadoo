@@ -1,0 +1,109 @@
+@use "../base/colors";
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.subscribe {
+  position: relative;
+  padding: 0 v.$content-padding-x;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f7fe;
+    height: 407px;
+    border-radius: 129px 20px 20px 20px;
+    align-items: center;
+    padding-top: 79px;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -90px;
+      bottom: -25px;
+      width: 100%;
+      height: 100%;
+      background-image: url("../../assets/images/circles.svg");
+      background-repeat: no-repeat;
+      background-position: left;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0px;
+      top: -30px;
+      width: 100%;
+      height: 100%;
+      background-image: url("../../assets/images/circles2.svg");
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+  }
+
+  &__title {
+    max-width: 859px;
+    font-size: "Poppins";
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 54px;
+    text-align: center;
+    color: colors.$dark-sky;
+  }
+
+  &__email-block {
+    display: flex;
+    margin-top: 80px;
+    gap: 24px;
+    z-index: 50;
+  }
+
+  &__icon {
+    position: absolute;
+    right: 120px;
+    top: -20px;
+    width: 70px;
+    z-index: 100;
+  }
+
+  &__decoration {
+    position: absolute;
+    right: 40px;
+    bottom: -70px;
+    width: 153px;
+  }
+}
+
+.subscribe-email-block {
+  &__email-input {
+    width: 421px;
+    height: 68px;
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+    padding-bottom: 2px;
+    padding-left: 66px;
+    padding-right: 20px;
+    font-size: 14px;
+    color: #39425d;
+    background-image: url("../../assets/icons/email.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-position: 31px center;
+  }
+
+  &__button {
+    width: 180px;
+    height: 68px;
+    border-radius: 10px;
+    color: white;
+    font-family: "GoogleSans";
+    font-size: 17px;
+    font-weight: 500;
+    background: linear-gradient(180deg, #ff946d, #ff7d68);
+    cursor: pointer;
+
+    @include m.scale-hover(1.03);
+  }
+}

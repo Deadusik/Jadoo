@@ -1,4 +1,56 @@
+@use "../base/variables" as v;
+
 .container {
-    max-width: 1440px;
-    padding: 47px 140px;
+  max-width: v.$container-max-width;
+  min-width: v.$container-max-width;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  &__navbar {
+    margin-bottom: 130px;
+  }
+
+  &__main {
+  }
+
+  &__footer {
+    margin-top: 166px;
+  }
+
+  @mixin spot() {
+    border-radius: 50%;
+    opacity: 30%;
+    width: 500px;
+    height: 500px;
+    background-color: #d5aee4;
+    filter: blur(50px);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -350px;
+    top: 0;
+
+    @include spot;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -350px;
+    bottom: -300px;
+
+    @include spot;
+  }
+}
+
+.preview-container {
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: v.$container-max-width) {
+    display: block;
+  }
 }

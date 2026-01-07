@@ -1,10 +1,30 @@
 // base styles
-@use './base/variables';
-@use './base/mixins';
-@use './base/fonts';
+@use "./base/reset";
+@use "./base/variables";
+@use "./base/mixins";
+@use "./base/fonts";
+@use "./base/colors";
 
 // layout styles
-@use './layout/container';
+@use "./layout/container";
+@use "./layout/main";
 
-// component styles
-@use './components/navbar';
+// sections styles
+@use "./components/navbar";
+@use "./components/footer";
+@use "./components/header";
+@use "./components/services";
+@use "./components/destinations";
+@use "./components/booking";
+@use "./components/reviews";
+@use "./components/sponsors";
+@use "./components/subscribe";
+
+// components styles
+@use "./components/destination-card";
+@use "./components/service-card";
+@use "./components/title-sub-title";
+@use "./components/status-card-dialog";
+@use "./components/status-card";
+@use "./components/step";
+@use "./components/personal-review";

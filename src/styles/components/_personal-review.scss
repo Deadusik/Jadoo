@@ -1,0 +1,77 @@
+@use "../base/mixins" as m;
+@use "../base/colors";
+
+.personal-review {
+  width: 504px;
+  height: 245px;
+  position: relative;
+
+  border-radius: 10px;
+  font-family: "Poppins";
+  color: colors.$dark-sky;
+  background: white;
+  @include m.card-shadow();
+  transition: transform 0.3s ease;
+
+  &--inactive {
+    box-shadow: none;
+    outline: 2px solid #efefef;
+    z-index: -100;
+  }
+
+  &--inactive::before {
+    display: none;
+  }
+
+  &--swiping {
+    transform: translate(-50px, -85px);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    left: -31px;
+    top: -34px;
+    background-image: var(--avatar, url("../../assets/icons/avatar.svg"));
+    background-position: top left;
+    background-size: cover;
+  }
+
+  &__content {
+    height: 100%;
+    padding-top: 28px;
+    padding-left: 34px;
+    padding-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  &__text {
+    max-width: 384px;
+    white-space: pre-wrap;
+    text-align: start;
+    font-family: "Poppins";
+    line-height: 32px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__name-block {
+    margin-top: 38px;
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &__location {
+    margin-top: 17px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

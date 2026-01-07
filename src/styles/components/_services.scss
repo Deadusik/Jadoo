@@ -1,0 +1,60 @@
+@use "../base/colors";
+@use "../base/variables" as v;
+
+.services {
+  padding: 0 v.$content-padding-x;
+
+  &__content {
+  }
+
+  &__title-block {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 153px;
+      height: 166px;
+      top: 0;
+      right: -80px;
+      background-image: url("./../../assets/images/pros.svg");
+      background-repeat: no-repeat;
+      background-position: top right;
+      z-index: -100;
+    }
+  }
+
+  &__cards-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.services-title-block {
+  &__sub-title {
+    font-size: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: colors.$dark-sky;
+  }
+
+  &__title {
+    font-family: "Volkhov";
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 24px;
+    color: colors.$dark-blue;
+  }
+}
+
+.services-cards-block {
+  margin-top: 83px;
+
+  &__card {
+  }
+}

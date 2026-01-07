@@ -1,0 +1,26 @@
+@use "../base/variables.scss" as v;
+
+.destinations {
+  padding: 0 v.$content-padding-x;
+
+  &__cards-block {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title-block {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.destinations-cards-block {
+  max-width: 1102px;
+  width: 100%;
+  margin-top: 65px;
+  display: flex;
+  justify-content: space-between;
+
+  &__card {
+  }
+}

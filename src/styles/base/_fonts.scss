@@ -1,58 +1,74 @@
 // GoogleSans Font Faces
 @font-face {
-    font-family: 'GoogleSans';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../../assets/fonts/GoogleSans-Regular.ttf') format('truetype');
-    font-display: swap;
+  font-family: "GoogleSans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../assets/fonts/GoogleSans-Regular.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'GoogleSans';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../../assets/fonts/GoogleSans-Medium.ttf') format('truetype');
-    font-display: swap;
+  font-family: "GoogleSans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../assets/fonts/GoogleSans-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GoogleSans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../assets/fonts/GoogleSans-SemiBold.ttf") format("truetype");
+  font-display: swap;
 }
 
 // Poppins Font Faces
 @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../../assets/fonts/Poppins-Regular.ttf') format('truetype');
-    font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../../assets/fonts/Poppins-Medium.ttf') format('truetype');
-    font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../assets/fonts/Poppins-Medium.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../../assets/fonts/Poppins-Bold.ttf') format('truetype');
-    font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-display: swap;
 }
 
 // Volkhov Font Faces
 @font-face {
-    font-family: 'Volkhov';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../../assets/fonts/Volkhov-Regular.ttf') format('truetype');
-    font-display: swap;
+  font-family: "Volkhov";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../assets/fonts/Volkhov-Regular.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Volkhov';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../../assets/fonts/Volkhov-Bold.ttf') format('truetype');
-    font-display: swap;
+  font-family: "Volkhov";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../assets/fonts/Volkhov-Bold.ttf") format("truetype");
+  font-display: swap;
 }

@@ -1,0 +1,36 @@
+@use "../base/variables" as v;
+
+.booking {
+  padding: 0 v.$content-padding-x;
+
+  &__content {
+    display: flex;
+    gap: 118px;
+  }
+
+  &__info-block {
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+  }
+
+  &__title-block {
+  }
+
+  &__steps-block {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  &__step {
+  }
+
+  &__status-card-block {
+  }
+
+  &__status-card {
+    margin-top: 56px;
+  }
+}

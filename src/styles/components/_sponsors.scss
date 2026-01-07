@@ -1,0 +1,40 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.sponsors {
+  padding: 0 v.$content-padding-x;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__sponsor {
+  }
+}
+
+.sponsor {
+  cursor: pointer;
+  width: 241px;
+  height: 86px;
+  position: relative;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: grayscale(100%);
+  }
+
+  &:hover &__icon {
+    filter: none;
+  }
+
+  &:hover {
+    @include m.card-shadow();
+  }
+}
