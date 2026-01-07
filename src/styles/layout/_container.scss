@@ -44,3 +44,8 @@
     @include spot;
   }
 }
+
+.preview-container {
+  display: flex;
+  justify-content: center;
+}
