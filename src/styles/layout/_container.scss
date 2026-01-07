@@ -3,6 +3,8 @@
 .container {
   max-width: v.$container-max-width;
   min-width: v.$container-max-width;
+  position: relative;
+  overflow: hidden;
 
   &__navbar {
     margin-bottom: 130px;
@@ -13,5 +15,32 @@
 
   &__footer {
     margin-top: 166px;
+  }
+
+  @mixin spot() {
+    border-radius: 50%;
+    opacity: 30%;
+    width: 500px;
+    height: 500px;
+    background-color: #d5aee4;
+    filter: blur(50px);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -350px;
+    top: 0;
+
+    @include spot;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -350px;
+    bottom: -300px;
+
+    @include spot;
   }
 }
