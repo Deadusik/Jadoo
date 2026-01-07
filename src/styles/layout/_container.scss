@@ -3,6 +3,7 @@
 .container {
   max-width: v.$container-max-width;
   min-width: v.$container-max-width;
+  width: 100%;
   position: relative;
   overflow: hidden;
 
@@ -48,4 +49,8 @@
 .preview-container {
   display: flex;
   justify-content: center;
+
+  @media (max-width: v.$container-max-width) {
+    display: block;
+  }
 }
